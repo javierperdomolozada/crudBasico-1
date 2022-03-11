@@ -10,7 +10,7 @@ import { RouterModule } from '@angular/router';
 @NgModule({
   declarations: [CabeceraComponent, HomeComponent, PaginaNoExisteComponent],
   imports: [CommonModule, RouterModule, MaterialModule],
-  exports: [CabeceraComponent, HomeComponent],
+  exports: [CabeceraComponent],
 })
 export class CoreModule {
   constructor(@Optional() @SkipSelf() parentModule?: CoreModule) {
