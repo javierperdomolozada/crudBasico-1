@@ -17,7 +17,7 @@ export class CoreModule {
     //Es importante garantizar que el Core module solo se importe una vez
     if (parentModule) {
       throw new Error(
-        'CoreModule is already loaded. Import it in the AppModule only.'
+        'CoreModule ya esta cargado. Debe ser importado solo en AppModule.'
       );
     }
   }

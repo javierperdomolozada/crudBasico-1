@@ -1,8 +1,14 @@
 <mat-toolbar color="primary">
-  <button mat-icon-button aria-label="home icon">
+  <button
+    mat-icon-button
+    aria-label="home icon"
+    [routerLink]="['/home']"
+    routerLinkActive="router-link-active"
+  >
     <mat-icon fontSet="material-icons-outlined">home</mat-icon>
+    <span>App CRUD</span>
   </button>
-  <span>App CRUD</span>
+
   <span class="espacios"></span>
   <button mat-button>Productos</button>
   <button mat-button>Pdvs</button>
