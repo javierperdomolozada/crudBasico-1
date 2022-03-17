@@ -6,6 +6,13 @@ import { PaginaNoExisteComponent } from './core/pagina-no-existe/pagina-no-exist
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
+  {
+    path: 'productosclp',
+    loadChildren: () =>
+      import('./features/productosclp/productosclp.module').then(
+        (m) => m.ProductosclpModule
+      ),
+  },
   { path: '**', component: PaginaNoExisteComponent },
 ];
 
