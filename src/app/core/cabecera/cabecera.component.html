@@ -10,8 +10,47 @@
   </button>
 
   <span class="espacios"></span>
-  <button mat-button>Productos</button>
-  <button mat-button>Pdvs</button>
-  <button mat-button>Ciudades</button>
+  <button
+    mat-button
+    [routerLink]="['/productosclp']"
+    routerLinkActive="router-link-active"
+  >
+    ProductosCLP
+  </button>
+  <button
+    mat-button
+    [routerLink]="['/productosjp']"
+    routerLinkActive="router-link-active"
+  >
+    ProductosJP
+  </button>
+  <button
+    mat-button
+    [routerLink]="['/productosfm']"
+    routerLinkActive="router-link-active"
+  >
+    ProductosFM
+  </button>
+  <button
+    mat-button
+    [routerLink]="['/productosys']"
+    routerLinkActive="router-link-active"
+  >
+    ProductosYS
+  </button>
+  <button
+    mat-button
+    [routerLink]="['/productosyg']"
+    routerLinkActive="router-link-active"
+  >
+    ProductosYG
+  </button>
+  <button
+    mat-button
+    [routerLink]="['/productoswr']"
+    routerLinkActive="router-link-active"
+  >
+    ProductosWR
+  </button>
   <span class="espacios"></span>
 </mat-toolbar>
