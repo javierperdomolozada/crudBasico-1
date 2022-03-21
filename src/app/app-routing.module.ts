@@ -13,7 +13,15 @@ const routes: Routes = [
         (m) => m.ProductosclpModule
       ),
   },
+  {
+    path: 'productosjp',
+    loadChildren: () =>
+      import('./features/productosjp/productosjp.module').then(
+        (m) => m.ProductosjpModule
+      ),
+  },
   { path: '**', component: PaginaNoExisteComponent },
+
 ];
 
 @NgModule({
