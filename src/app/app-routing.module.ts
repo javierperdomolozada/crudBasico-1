@@ -13,6 +13,13 @@ const routes: Routes = [
         (m) => m.ProductosclpModule
       ),
   },
+  {
+    path: 'productosyg',
+    loadChildren: () =>
+      import('./features/productosyg/productosyg.module').then(
+        (m) => m.ProductosygModule
+      ),
+  },
   { path: '**', component: PaginaNoExisteComponent },
 ];
 
