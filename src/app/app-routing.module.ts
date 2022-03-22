@@ -11,6 +11,15 @@ const routes: Routes = [
         (m) => m.ProductosclpModule
       ),
   },
+
+  {
+    path: 'productoswr',
+    loadChildren: () =>
+      import('./features/productoswr/productoswr.module').then(
+        (m) => m.ProductoswrModule
+      ),
+  },
+
   { path: 'productosys', loadChildren: () =>
       import('./features/productosys/productosys.module').then(
         (m) => m.ProductosysModule
