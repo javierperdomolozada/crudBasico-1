@@ -13,7 +13,7 @@ const material = [
   MatButtonModule,
   MatToolbarModule,
   MatIconModule,
-  MatTableModule
+  MatTableModule,
 ];
 
 @NgModule({
