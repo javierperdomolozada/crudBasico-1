@@ -13,6 +13,13 @@ const routes: Routes = [
         (m) => m.ProductosclpModule
       ),
   },
+  {
+    path: 'productoswr',
+    loadChildren: () =>
+      import('./features/productoswr/productoswr.module').then(
+        (m) => m.ProductoswrModule
+      ),
+  },
   { path: '**', component: PaginaNoExisteComponent },
 ];
 
