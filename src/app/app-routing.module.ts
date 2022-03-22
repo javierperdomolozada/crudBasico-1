@@ -13,6 +13,15 @@ const routes: Routes = [
   },
 
   {
+    path: 'productosyg',
+    loadChildren: () =>
+      import('./features/productosyg/productosyg.module').then(
+        (m) => m.ProductosygModule
+      ),
+  },
+
+
+  {
     path: 'productosjp',
     loadChildren: () =>
       import('./features/productosjp/productosjp.module').then(
@@ -43,6 +52,7 @@ const routes: Routes = [
         (m) => m.ProductosysModule
       ),
   },
+
 
 
 
