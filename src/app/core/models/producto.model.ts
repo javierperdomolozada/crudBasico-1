@@ -5,3 +5,4 @@ export interface Producto {
   valor: string;
   imagen: string;
 }
+
