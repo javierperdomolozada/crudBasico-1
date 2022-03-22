@@ -6,13 +6,12 @@ import { PaginaNoExisteComponent } from './core/pagina-no-existe/pagina-no-exist
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
-  {
-    path: 'productosclp',
-    loadChildren: () =>
+  { path: 'productosclp', loadChildren: () =>
       import('./features/productosclp/productosclp.module').then(
         (m) => m.ProductosclpModule
       ),
   },
+
   {
     path: 'productosjp',
     loadChildren: () =>
@@ -20,6 +19,34 @@ const routes: Routes = [
         (m) => m.ProductosjpModule
       ),
   },
+
+
+  {
+    path: 'productosfm',
+    loadChildren: () =>
+      import('./features/productosfm/productosfm.module').then(
+        (m) => m.ProductosfmModule
+      ),
+  },
+
+
+  {
+    path: 'productoswr',
+    loadChildren: () =>
+      import('./features/productoswr/productoswr.module').then(
+        (m) => m.ProductoswrModule
+      ),
+  },
+
+  { path: 'productosys', loadChildren: () =>
+      import('./features/productosys/productosys.module').then(
+        (m) => m.ProductosysModule
+      ),
+  },
+
+
+
+
   { path: '**', component: PaginaNoExisteComponent },
 
 ];
