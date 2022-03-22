@@ -13,6 +13,15 @@ const routes: Routes = [
   },
 
   {
+    path: 'productosfm',
+    loadChildren: () =>
+      import('./features/productosfm/productosfm.module').then(
+        (m) => m.ProductosfmModule
+      ),
+  },
+
+
+  {
     path: 'productoswr',
     loadChildren: () =>
       import('./features/productoswr/productoswr.module').then(
@@ -25,6 +34,7 @@ const routes: Routes = [
         (m) => m.ProductosysModule
       ),
   },
+
 
 
   { path: '**', component: PaginaNoExisteComponent },
