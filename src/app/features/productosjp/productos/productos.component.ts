@@ -10,7 +10,7 @@ export interface PeriodicElement {
   symbol: string;
 }
 
-const ELEMENT_DATA: Producto[] = [
+const listProductos: Producto[] = [
   {
     id: 1,
     nombre: 'Acelifen',
@@ -77,14 +77,10 @@ const ELEMENT_DATA: Producto[] = [
 })
 export class ProductosComponent implements OnInit {
   displayedColumns: string[] = ['nombre', 'descripcion', 'valor', 'acciones'];
-<<<<<<< HEAD
-  dataSource = ELEMENT_DATA;
-=======
-  dataSource = new MatTableDataSource(ELEMENT_DATA);
+  dataSource = new MatTableDataSource(listProductos);
   @ViewChild(MatPaginator) paginator!: MatPaginator;
 
 
->>>>>>> crudProductoJP
   constructor() { }
 
   ngOnInit(): void {}
