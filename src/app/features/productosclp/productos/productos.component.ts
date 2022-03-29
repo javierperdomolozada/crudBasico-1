@@ -3,6 +3,7 @@ import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
 import { Producto } from 'src/app/core/models/producto.model';
 
+
 @Component({
   selector: 'app-productos',
   templateUrl: './productos.component.html',
