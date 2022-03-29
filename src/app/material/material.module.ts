@@ -10,6 +10,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatPaginatorModule}  from '@angular/material/paginator';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 const material = [
   MatCardModule,
@@ -19,7 +20,8 @@ const material = [
   MatTableModule,
   MatFormFieldModule,
   MatInputModule,
-  MatPaginatorModule
+  MatPaginatorModule,
+  MatTooltipModule
 ];
 
 @NgModule({
