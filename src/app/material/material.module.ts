@@ -10,13 +10,9 @@ import { MatTableModule } from '@angular/material/table';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-<<<<<<< HEAD
-import { MatPaginatorModule } from '@angular/material/paginator';
-=======
 import { MatPaginatorModule}  from '@angular/material/paginator';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatSortModule }  from '@angular/material/sort';
->>>>>>> crudProductoYS
 
 const material = [
   MatCardModule,
@@ -28,11 +24,8 @@ const material = [
   MatFormFieldModule,
   MatInputModule,
   MatPaginatorModule,
-<<<<<<< HEAD
-=======
   MatTooltipModule,
   MatSortModule
->>>>>>> crudProductoYS
 ];
 
 @NgModule({
