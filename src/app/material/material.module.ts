@@ -13,7 +13,6 @@ import { MatInputModule } from '@angular/material/input';
 import { MatPaginatorModule } from '@angular/material/paginator';
 
 
-
 const material = [
   MatCardModule,
   MatButtonModule,
@@ -23,7 +22,8 @@ const material = [
   MatTooltipModule,
   MatFormFieldModule,
   MatInputModule,
-  MatPaginatorModule
+  MatPaginatorModule,
+
 ];
 
 @NgModule({
