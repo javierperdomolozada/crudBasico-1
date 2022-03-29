@@ -23,7 +23,6 @@ const material = [
   MatFormFieldModule,
   MatInputModule,
   MatPaginatorModule,
-  MatTooltipModule,
   MatSortModule
 ];
 
