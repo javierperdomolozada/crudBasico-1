@@ -75,6 +75,7 @@ export class ProductoService {
     const index = this.listProductos.findIndex((producto) => {
       producto.id === idProducto;
     });
+
     this.listProductos.splice(index, 1);
   }
 }

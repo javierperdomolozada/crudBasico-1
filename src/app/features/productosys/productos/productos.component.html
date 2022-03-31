@@ -33,7 +33,7 @@
           <a class="cursor color_edit" matTooltip="Editar Prodcuto">
             <mat-icon>edit</mat-icon>
           </a>
-          <a class="cursor color_delete" matTooltip="Eliminar Prodcuto">
+          <a (click)= "eliminarProducto(element.id)"  class="cursor color_delete" matTooltip="Eliminar Prodcuto">
             <mat-icon>delete</mat-icon>
           </a>
         </td>
