@@ -1,5 +1,6 @@
 import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
+import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import{Producto} from '../../../core/models/producto.model'
 
@@ -72,6 +73,7 @@ export class ProductosComponent implements OnInit,AfterViewInit {
   //dataSource = ELEMENT_DATA;
   dataSource = new MatTableDataSource(this.lisProducto);
   @ViewChild(MatPaginator) paginator!: MatPaginator;
+  @ViewChild(MatSort) sort!: MatSort;
   constructor() { }
 
   ngOnInit(): void {
@@ -79,7 +81,7 @@ export class ProductosComponent implements OnInit,AfterViewInit {
 
   ngAfterViewInit() {
     this.dataSource.paginator = this.paginator;
-    //this.dataSource.sort = this.sort;
+    this.dataSource.sort = this.sort;
   }
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;
