@@ -6,3 +6,28 @@ table {
   width: 100%;
   margin-top: auto;
 }
+.cursor
+{
+  cursor: pointer;
+}
+.cursor {
+  cursor: pointer;
+  margin-right: 16px;
+}
+
+.color_search {
+  color: #0bae7a;
+}
+
+.color_edit {
+  color: blue;
+}
+
+.color_delete {
+  color: blueviolet;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
