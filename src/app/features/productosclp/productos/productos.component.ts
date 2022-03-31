@@ -10,6 +10,7 @@ import { Producto } from 'src/app/core/models/producto.model';
   styleUrls: ['./productos.component.css'],
 })
 export class ProductosComponent implements OnInit, AfterViewInit {
+  listProductos: Producto[] = [];
   displayedColumns: string[] = ['nombre', 'descripcion', 'valor', 'acciones'];
   //dataSource = ELEMENT_DATA;
   dataSource = new MatTableDataSource(this.listProductos);
