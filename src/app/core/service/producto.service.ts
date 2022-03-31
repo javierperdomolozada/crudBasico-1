@@ -75,6 +75,7 @@ export class ProductoService {
     const index = this.listProductos.findIndex((producto) => {
       return producto.id === idProducto;
     });
+
     if (index < 0) return; // No encontró coincidencia
     this.listProductos.splice(index, 1);
   }
