@@ -13,7 +13,7 @@
       autocomplete="off"
     />
   </mat-form-field>
-
+<div *ngIf="listProductos.length>0" > 
   <div class="mat-elevation-z4">
     <table mat-table [dataSource]="dataSource" matSort>
       <ng-container matColumnDef="nombre">
@@ -57,4 +57,6 @@
     >
     </mat-paginator>
   </div>
+</div>
+<h2 *ngIf="listProductos.length==0">No hay mas productos para mostrar</h2>
 </div>
