@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ReactiveFormsModule } from '@angular/forms';
+
 
 //Modulos de material
 import { MatCardModule } from '@angular/material/card';
@@ -31,7 +31,7 @@ const material = [
   MatSnackBarModule,
   MatGridListModule,
   MatSelectModule,
-  ReactiveFormsModule
+  
 ];
 
 @NgModule({

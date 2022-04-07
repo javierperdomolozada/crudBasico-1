@@ -68,4 +68,8 @@ export class CrearProductoComponent implements OnInit {
       verticalPosition:'bottom'
     })
   }
+  regresar(){
+    this.router.navigate(['/productosjp']);
+  }
+
 }

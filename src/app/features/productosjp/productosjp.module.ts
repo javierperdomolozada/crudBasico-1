@@ -5,6 +5,7 @@ import { ProductosjpRoutingModule } from './productosjp-routing.module';
 import { ProductosComponent } from './productos/productos.component';
 import { MaterialModule } from 'src/app/material/material.module';
 import { CrearProductoComponent } from './crear-producto/crear-producto.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { CrearProductoComponent } from './crear-producto/crear-producto.componen
   imports: [
     CommonModule,
     ProductosjpRoutingModule,
-    MaterialModule
+    MaterialModule,
+    SharedModule,
   ]
 })
 export class ProductosjpModule { }
