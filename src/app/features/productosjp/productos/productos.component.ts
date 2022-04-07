@@ -26,6 +26,8 @@ export class ProductosComponent implements OnInit, AfterViewInit {
   cargarProductos() {
     this.listProductos = this.ProductoService.getProductos();
     this.dataSource = new MatTableDataSource(this.listProductos);
+    this.dataSource.paginator = this.paginator;
+    this.dataSource.sort = this.sort
   }
 
   ngAfterViewInit(){
@@ -39,8 +41,12 @@ export class ProductosComponent implements OnInit, AfterViewInit {
 eliminarProducto(idProducto: number) {
   console.log('idProducto', idProducto);
   this.ProductoService.eliminarProducto(idProducto);
+  const index = this.listProductos.findIndex((producto) => {
+    return producto.id === idProducto;
+  })
   this.cargarProductos()
-  this._snackBar.open('El producto fue eliminado con exito','',{
+  //this._snackBar.open('El producto fue eliminado con exito' + this.listProductos[index].nombre,'',{
+    this._snackBar.open(`El producto fue eliminado con exito  ${this.listProductos[index].nombre}`,'',{
     duration:2000,
     horizontalPosition:'center',
     verticalPosition:'bottom'

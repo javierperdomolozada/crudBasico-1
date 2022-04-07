@@ -76,5 +76,8 @@ export class ProductoService {
     producto.id === idProducto;
     });
         this.listProductos.splice(index, 1);
-  }
+ } 
+ agregarProducto(producto: Producto) {
+  this.listProductos.unshift(producto);
+ }
 }

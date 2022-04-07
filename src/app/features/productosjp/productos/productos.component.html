@@ -1,6 +1,8 @@
 <div class="contenedor">
   <mat-toolbar>
     <span>Productos</span>
+    <div class="espacios"></div>
+    <button mat-raised-button color="primary" [routerLink]="['/productosjp/crear-producto']">Adicionar</button>
   </mat-toolbar>
 
   <mat-form-field appearance="standard">
@@ -58,5 +60,7 @@
     </mat-paginator>
   </div>
 </div>
+<div>
 <h2 *ngIf="listProductos.length==0">No hay mas productos para mostrar</h2>
+</div>
 </div>
